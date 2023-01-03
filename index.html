@@ -4,8 +4,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>Arabic Email Template</title>
     <style type="text/css">
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        .dark-btn {
+          background: #fff !important;
+        }
+        .pay-text-dark {
+          color: #000000 !important;
+        }
+        .main-dark {
+          background-color: black !important;
+          color: white !important;
+        }
+      }
       body {
         margin: 0;
         background-color: #cccccc;
@@ -62,7 +80,6 @@
         border: none;
       }
       .pay-text {
-        font-family: "Helvetica Neue";
         color: #fff;
         font-weight: 400;
         font-size: 20px;
@@ -74,7 +91,7 @@
       }
       .question {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 28px;
         text-align: right;
         width: 244px;
@@ -111,11 +128,10 @@
         vertical-align: top;
       }
       .img {
-        width: 195px;
-        height: 329px;
+        width: 204px;
+        height: 267px;
       }
       .address {
-        font-family: "Helvetica Neue";
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
@@ -126,10 +142,13 @@
   </head>
   <body>
     <center class="wrapper">
-      <table class="main" width="100%">
+      <table class="main main-dark" width="100%">
         <tr>
           <td style="background-color: #cdc5e1">
-            <img src="./img/ar_header.svg" alt="" style="max-width: 100%" />
+            <img
+              src="./img/final_header_ar.svg"
+              alt=""
+              style="max-width: 100%" />
           </td>
         </tr>
 
@@ -137,16 +156,18 @@
           <td style="padding: 40px 32px 20px">
             <h2 class="title">!(NAME) يا هلا</h2>
             <p style="padding-top: 16px" class="text" dir="rtl">
-              تم إنشاء طلبك من XXX بقيمة XXX ريال وهو حاليا قيد الانتظار حتى تتم
-              عملية الدفع
+              تم إنشاء طلبك من [Tamara Store] بقيمة XXX ريال وهو حاليا قيد
+              الانتظار حتى تتم عملية الدفع
             </p>
           </td>
         </tr>
 
         <tr>
           <td style="padding: 60px">
-            <button class="btn">
-              <p class="pay-text" dir="rtl">ادفع XX ريال وأكمل الطلب</p>
+            <button class="btn dark-btn">
+              <p class="pay-text pay-text-dark" dir="rtl">
+                ادفع بكل سهولة الان
+              </p>
             </button>
           </td>
         </tr>
@@ -158,21 +179,23 @@
                 <td class="two-columns" style="display: flex">
                   <table class="column">
                     <tr>
-                      <td style="padding-top: 13px; padding-left: 32px">
+                      <td style="padding-top: 40px; padding-left: 32px">
                         <img src="./img/ar_img.svg" alt="" class="img" />
                       </td>
                     </tr>
                   </table>
-                  <table class="column">
+                  <table class="column" style="padding: 40px 46.22px 66px 21px">
                     <tr>
-                      <td style="padding-top: 40px; padding-right: 32px">
+                      <td>
                         <h3 class="question">باقي ما حمّلت التطبيق؟</h3>
                         <p class="text-2">
                           شيّك على أحدث المتاجر واستمتع بأفضل العروض مع فرح
                           واستفيد منها لما تختار تمارا عند الدفع
                         </p>
-                        <button class="btn-2">
-                          <p class="download-text">حمّل التطبيق</p>
+                        <button class="btn-2 dark-btn">
+                          <p class="download-text pay-text-dark">
+                            حمّل التطبيق
+                          </p>
                         </button>
                       </td>
                     </tr>
@@ -246,7 +269,7 @@
                           style="
                             display: flex;
                             margin-top: 15px;
-                            margin-left: 92px;
+                            margin-left: 43px;
                           ">
                           <a
                             href="https://tamara.co/en/terms-and-conditions.html"
