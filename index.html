@@ -44,96 +44,18 @@
       h2,
       h3,
       p {
-        font-family: "Tahoma";
+        font-family: Tahoma, sans-serif;
         padding: 0;
         margin: 0;
       }
-      .wrapper {
-        width: 100%;
-        table-layout: fixed;
-        background-color: #cccccc;
-        padding-bottom: 60px;
-      }
-      .main {
-        background-color: #fff;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 600px;
-        font-family: sans-serif;
-        color: #171a1b;
-      }
-      .title {
-        font-size: 24 !important;
-        font-weight: 700;
-        text-align: right;
-      }
-      .text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-        text-align: right;
-      }
-      .btn {
-        width: 481px;
-        height: 64px;
-        border-radius: 12px;
-        align-items: center;
-        padding: 20px 40px;
-        background: #000000;
-        border: none;
-      }
-      .pay-text {
-        color: #fff;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-      }
-      .table {
-        background: #21aeef1a;
-        border-radius: 18px;
-      }
-      .question {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
-        text-align: right;
-        width: 244px;
-      }
-      .text-2 {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        margin-top: 16px;
-        text-align: right;
-      }
-      .btn-2 {
-        justify-content: center;
-        align-items: center;
-        padding: 12px 24px;
-        background: #000000;
-        border-radius: 8px;
-        margin-top: 24px;
-        border: none;
-        margin-left: 117px;
-      }
-      .download-text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        color: #fff;
-        align-items: center;
-        text-align: center;
-      }
+
       .two-columns .column {
         width: 100%;
         max-width: 300px;
         display: inline-block;
         vertical-align: top;
       }
-      .img {
-        width: 204px;
-        height: 267px;
-      }
+
       .address {
         font-weight: 400;
         font-size: 14px;
@@ -144,12 +66,28 @@
     </style>
   </head>
   <body>
-    <center class="wrapper">
-      <table class="main main-dark" width="100%">
+    <center
+      class="wrapper"
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #cccccc;
+        padding-bottom: 60px;
+      ">
+      <table
+        class="main-dark"
+        style="
+          background-color: #fff;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 600px;
+          font-family: Tahoma, sans-serif;
+          color: #171a1b;
+        ">
         <tr>
           <td style="background-color: #cdc5e1">
             <img
-              src="./img/final_header_ar.svg"
+              src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/0ef8eeef-6c15-4a64-eafa-653a783cb92d.png"
               alt=""
               style="max-width: 100%" />
           </td>
@@ -157,49 +95,126 @@
 
         <tr>
           <td style="padding: 40px 32px 20px">
-            <h2 class="title">!(NAME) يا هلا</h2>
-            <p style="padding-top: 16px" class="text" dir="rtl">
-              تم إنشاء طلبك من [Tamara Store] بقيمة XXX ريال وهو حاليا قيد
-              الانتظار حتى تتم عملية الدفع
+            <h2 style="font-size: 24; font-weight: 700; text-align: right">
+              ! |*customerName*| يا هلا
+            </h2>
+            <p
+              style="
+                padding-top: 16px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: right;
+              "
+              dir="rtl">
+              تم إنشاء طلبك من *|merchantName|* بقيمة *|total|* ريال وهو حاليا
+              قيد الانتظار حتى تتم عملية الدفع
             </p>
           </td>
         </tr>
 
         <tr>
           <td style="padding: 60px">
-            <button class="btn dark-btn">
-              <p class="pay-text pay-text-dark" dir="rtl">
-                ادفع بكل سهولة الان
-              </p>
-            </button>
+            <a href="paymentLink" target="_blank" style="text-decoration: none">
+              <div
+                class="dark-btn"
+                style="
+                  cursor: pointer;
+                  border-radius: 12px;
+                  align-items: center;
+                  padding: 20px 40px;
+                  background: #000000;
+                  border: none;
+                ">
+                <p
+                  class="pay-text-dark"
+                  dir="rtl"
+                  style="
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                  ">
+                  ادفع بكل سهولة الان
+                </p>
+              </div>
+            </a>
           </td>
         </tr>
 
         <tr>
           <td style="padding: 20px 32px">
-            <table style="width: 100%" class="table table-dark">
+            <table
+              style="width: 100%; background: #21aeef1a; border-radius: 18px"
+              class="table-dark">
               <tr>
                 <td class="two-columns" style="display: flex">
                   <table class="column">
                     <tr>
                       <td style="padding-top: 40px; padding-left: 32px">
-                        <img src="./img/ar_img.svg" alt="" class="img" />
+                        <img
+                          src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/35c5abc8-a75f-6c08-6b60-f56404517fa4.png"
+                          alt=""
+                          style="width: 204px; height: 267px" />
                       </td>
                     </tr>
                   </table>
                   <table class="column" style="padding: 40px 46.22px 66px 21px">
                     <tr>
                       <td>
-                        <h3 class="question">باقي ما حمّلت التطبيق؟</h3>
-                        <p class="text-2">
+                        <h3
+                          style="
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 28px;
+                            text-align: right;
+                            width: 244px;
+                          ">
+                          باقي ما حمّلت التطبيق؟
+                        </h3>
+                        <p
+                          class="text-2"
+                          style="
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 28px;
+                            margin-top: 16px;
+                            text-align: right;
+                          ">
                           شيّك على أحدث المتاجر واستمتع بأفضل العروض مع فرح
                           واستفيد منها لما تختار تمارا عند الدفع
                         </p>
-                        <button class="btn-2 dark-btn">
-                          <p class="download-text pay-text-dark">
-                            حمّل التطبيق
-                          </p>
-                        </button>
+                        <a
+                          href="https://tamara.co/app.html"
+                          target="_blank"
+                          style="text-decoration: none">
+                          <div
+                            class="dark-btn"
+                            style="
+                              justify-content: center;
+                              align-items: center;
+                              padding: 12px 24px;
+                              background: #000000;
+                              border-radius: 8px;
+                              margin-top: 24px;
+                              border: none;
+                              margin-left: 117px;
+                            ">
+                            <p
+                              class="pay-text-dark"
+                              style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #fff;
+                                align-items: center;
+                                text-align: center;
+                              ">
+                              حمّل التطبيق
+                            </p>
+                          </div>
+                        </a>
                       </td>
                     </tr>
                   </table>
@@ -228,7 +243,7 @@
                           href="https://www.tiktok.com/@usetamaraen"
                           target="_blank">
                           <img
-                            src="./img/tiktok_ar_final.svg"
+                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/326253a9-1820-de48-4b43-673837e220ad.png"
                             alt=""
                             style="margin-right: 27.78px" />
                         </a>
@@ -236,14 +251,16 @@
                           href="https://twitter.com/usetamaraen?s=20&t=H3YgRG-3-1A3CuCG4QZCeA"
                           target="_blank">
                           <img
-                            src="./img/twitter.svg"
+                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/9ef4bf3c-ebb6-8424-f827-6eb4377c3fba.png"
                             alt=""
                             style="margin-right: 27.78px" />
                         </a>
                         <a
                           href="https://www.instagram.com/usetamaraen/"
                           target="_blank">
-                          <img src="./img/Frame.svg" alt="" />
+                          <img
+                            src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/9222e952-9e0a-261f-584d-b4372b1d2212.png"
+                            alt="" />
                         </a>
                       </td>
                     </tr>
@@ -252,10 +269,19 @@
                     <tr>
                       <td style="padding: 40px 32px">
                         <img
-                          src="./img/ar_logo.svg"
+                          src="https://mcusercontent.com/7aa8041a84f5e43a8572cffaf/images/02eb0428-08f7-8231-cf1a-85a273a4abdb.png"
                           alt=""
                           style="margin-bottom: 24px; margin-left: 288px" />
-                        <p class="address" style="width: 357px" dir="rtl">
+                        <p
+                          style="
+                            width: 357px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #ffffff;
+                            text-align: right;
+                          "
+                          dir="rtl">
                           شركة نخلة لتقنية نظم المعلومات،6901 طريق التخصصي
                           <br />
                           الفرعي، حي الرحمانية الرياض، المملكة العربية السعودية.
@@ -267,24 +293,52 @@
                             margin-left: 43px;
                           ">
                           <a
-                            href="https://tamara.co/en/terms-and-conditions.html"
+                            href="https://tamara.co/terms-and-conditions.html"
                             target="_blank"
                             style="text-decoration: none">
-                            <p class="address">مركز المساعدة</p>
+                            <p
+                              class="address"
+                              style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #ffffff;
+                                text-align: right;
+                              ">
+                              مركز المساعدة
+                            </p>
                           </a>
                           <a
-                            href="https://cdn.tamara.co/static/faq-en.html"
+                            href="https://cdn.tamara.co/static/faq-ar.html"
                             target="_blank"
                             style="text-decoration: none">
-                            <p class="address" style="margin-left: 26px">
+                            <p
+                              class="address"
+                              style="
+                                margin-left: 26px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #ffffff;
+                                text-align: right;
+                              ">
                               أسئلة وأجوبة
                             </p>
                           </a>
                           <a
-                            href="https://support.tamara.co/hc/en-us"
+                            href="https://support.tamara.co/hc"
                             target="_blank"
                             style="text-decoration: none">
-                            <p class="address" style="margin-left: 26px">
+                            <p
+                              class="address"
+                              style="
+                                margin-left: 26px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #ffffff;
+                                text-align: right;
+                              ">
                               الشروط والأحكام
                             </p>
                           </a>
